@@ -4,13 +4,7 @@
 
 from setuptools import setup, find_packages
 
-with open('README.rst') as readme_file:
-    readme = readme_file.read()
-
-with open('HISTORY.rst') as history_file:
-    history = history_file.read()
-
-requirements = [ ]
+requirements = ["rpy2>=3.4.5", "numpy", "scipy", "pandas"]
 
 test_requirements = [ ]
 
@@ -30,15 +24,15 @@ setup(
     ],
     description="Diffusion models for finance, insurance, economics, physics",
     install_requires=requirements,
-    license="BSD license",
-    long_description=readme + '\n\n' + history,
+    license="BSD Clause Clear license",
+    long_description="Python port of R package 'esgtoolkit' (https://techtonique.github.io/esgtoolkit/)",
     include_package_data=True,
     keywords='esgtoolkit',
     name='esgtoolkit',
     packages=find_packages(include=['esgtoolkit', 'esgtoolkit.*']),
     test_suite='tests',
     tests_require=test_requirements,
-    url='https://github.com/thierrymoudiki/esgtoolkit',
+    url='https://github.com/Techtonique/esgtoolkit_python',
     version='1.0.0',
     zip_safe=False,
 )
