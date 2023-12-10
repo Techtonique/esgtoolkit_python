@@ -1,4 +1,5 @@
 import pickle 
+from rpy2.robjects import r
 from subprocess import Popen, PIPE 
 
 proc = Popen(["which", "R"], stdout=PIPE, stderr=PIPE)

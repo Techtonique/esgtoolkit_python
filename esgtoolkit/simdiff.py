@@ -1,8 +1,9 @@
+import numpy as np 
 import pandas as pd
 from .config import R_IS_INSTALLED, RPY2_IS_INSTALLED, RPY2_ERROR_MESSAGE, \
     USAGE_MESSAGE, ESGTOOLKIT_PACKAGE, R_NULL
 from rpy2.robjects.packages import importr
-from rpy2.robjects import pandas2ri
+from rpy2.robjects import pandas2ri, r 
 
 base = importr("base")
 stats = importr("stats")    
@@ -68,8 +69,10 @@ def simdiff(
             eps=eps,
             start=start,
             seed=seed,
-        )    
+        )        
+
+    print(dir(res))
 
     # convert R object to pandas dataframe
-    return res 
+    return np.asarray(res)
 
