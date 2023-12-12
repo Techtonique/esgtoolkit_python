@@ -13,3 +13,6 @@ pip install esgtoolkit
 and 
 
 [Notebook](./esgtoolkit/demo/2023-12-11-simdiff.ipynb)
+
+
+[](./esgtoolkit/demo/2023-12-11-simdiff_files/2023-12-11-simdiff_10_0.png)
