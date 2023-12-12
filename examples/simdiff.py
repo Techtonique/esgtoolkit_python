@@ -11,10 +11,25 @@ theta3 = sigma_v
 # OU
 
 sims = simdiff(
-    n=10,
+    n=7,
     horizon=5,
     frequency="quarterly",
     model="OU",
+    x0=V0,
+    theta1=theta1,
+    theta2=theta2,
+    theta3=theta3,
+)
+
+print(sims)
+
+# GBM
+
+sims = simdiff(
+    n=7,
+    horizon=5,
+    frequency="semi-annual",
+    model="GBM",
     x0=V0,
     theta1=theta1,
     theta2=theta2,
