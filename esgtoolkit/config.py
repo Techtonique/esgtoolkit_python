@@ -66,6 +66,7 @@ if len(packages_to_install) > 0:
 
 FLOATMATRIX = FloatMatrix
 FLOATVECTOR = FloatVector
+STRVECTOR = StrVector
 ESGTOOLKIT_PACKAGE = importr("esgtoolkit")
 CHECK_PACKAGES = True
 DEEP_COPY = lambda x: pickle.loads(pickle.dumps(x, -1))
