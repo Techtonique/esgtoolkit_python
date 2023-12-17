@@ -54,6 +54,6 @@ setup(
     packages=find_packages(include=['esgtoolkit', 'esgtoolkit.*']),
     test_suite='tests',    
     url='https://github.com/Techtonique/esgtoolkit_python',
-    version='1.0.0',
+    version='1.1.0',
     zip_safe=False,
 )
