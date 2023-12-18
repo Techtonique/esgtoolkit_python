@@ -19,7 +19,7 @@ base = importr("base")
 stats = importr("stats")
 
 
-def esgmartingaletest(R, X, p0, alpha = 0.05, return_R_obj=False):
+def esgmartingaletest(R, X, p0, alpha=0.05, return_R_obj=False):
     """Martingale and market consistency (t-)tests."""
 
     if not R_IS_INSTALLED:
@@ -37,9 +37,11 @@ def esgmartingaletest(R, X, p0, alpha = 0.05, return_R_obj=False):
     res_dict["t"] = np.array(res.rx2("t"))
     res_dict["p.value"] = np.array(res.rx2("p.value"))
     res_dict["samplemean"] = np.array(res.rx2("samplemean"))
-    res_dict["conf.int"] = pd.DataFrame(np.array(res.rx2("conf.int")), 
-                                        columns=["lower", "upper"], 
-                                        index=r.time(res.rx2("conf.int")))
+    res_dict["conf.int"] = pd.DataFrame(
+        np.array(res.rx2("conf.int")),
+        columns=["lower", "upper"],
+        index=r.time(res.rx2("conf.int")),
+    )
     res_dict["truemean"] = np.array(res.rx2("truemean"))
     res_dict["true_prices"] = np.array(res.rx2("true_prices"))
     res_dict["mc.prices"] = np.array(res.rx2("mc.prices"))

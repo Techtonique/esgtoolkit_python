@@ -12,8 +12,20 @@ from .esgfwdrates import esgfwdrates
 from .esgmartingaletest import esgmartingaletest
 from .esgmccv import esgmccv
 from .esgmcprices import esgmcprices
+from .esgplotbands import esgplotbands
+from .esgplotshocks import esgplotshocks
+from .esgplotts import esgplotts
 
-__all__ = ["simdiff", "simshocks", "esgcortest", 
-           "esgdiscountfactor", "esgfwdrates", 
-           "esgmartingaletest", "esgmccv", 
-           "esgmcprices"]
+__all__ = [
+    "simdiff",
+    "simshocks",
+    "esgcortest",
+    "esgdiscountfactor",
+    "esgfwdrates",
+    "esgmartingaletest",
+    "esgmccv",
+    "esgmcprices",
+    "esgplotbands", 
+    "esgplotshocks",
+    "esgplotts"
+]

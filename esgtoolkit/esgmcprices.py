@@ -32,6 +32,4 @@ def esgmcprices(R, X, maturity=R_NULL, return_R_obj=False):
     if return_R_obj:
         return res
 
-    return pd.DataFrame(
-        np.asarray(res), index=r.time(res)
-    )
+    return pd.DataFrame(np.asarray(res), index=r.time(res))

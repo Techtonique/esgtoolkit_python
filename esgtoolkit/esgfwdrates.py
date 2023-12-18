@@ -56,16 +56,16 @@ def esgfwdrates(
     ), "method must be one of 'fmm', 'periodic', 'natural', 'monoH.FC', 'hyman', 'HCSPL', 'SW'"
 
     res = ESGTOOLKIT_PACKAGE.esgfwdrates(
-            FLOATVECTOR(in_maturities),
-            FLOATVECTOR(in_zerorates),
-            n = n,
-            horizon = horizon,
-            out_frequency = out_frequency,
-            method = method,
-            **kwargs,
-        )
+        FLOATVECTOR(in_maturities),
+        FLOATVECTOR(in_zerorates),
+        n=n,
+        horizon=horizon,
+        out_frequency=out_frequency,
+        method=method,
+        **kwargs,
+    )
 
     if return_R_obj:
-        return res 
+        return res
 
     return pd.DataFrame(np.array(res), columns=res.colnames, index=r.time(res))
