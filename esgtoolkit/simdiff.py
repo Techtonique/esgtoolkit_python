@@ -46,20 +46,20 @@ def simdiff(
     if not RPY2_IS_INSTALLED:
         raise ImportError(RPY2_ERROR_MESSAGE + USAGE_MESSAGE)
 
-    assert frequency in (
-        "annual",
-        "semi-annual",
-        "quarterly",
-        "monthly",
-        "weekly",
-        "daily",
-    ), "frequency must be one of ('annual', 'semi-annual', 'quarterly', 'monthly', 'weekly', 'daily')"
+    #assert frequency in (
+    #    "annual",
+    #    "semi-annual",
+    #    "quarterly",
+    #    "monthly",
+    #    "weekly",
+    #    "daily",
+    #), "frequency must be one of ('annual', 'semi-annual', 'quarterly', 'monthly', 'weekly', 'daily')"
 
-    assert model in (
-        "GBM",
-        "CIR",
-        "OU",
-    ), "model must be one of ('GBM', 'CIR', 'OU')"    
+    #assert model in (
+    #    "GBM",
+    #    "CIR",
+    #    "OU",
+    #), "model must be one of ('GBM', 'CIR', 'OU')"    
 
     res = ESGTOOLKIT_PACKAGE.simdiff(
         n=n,
