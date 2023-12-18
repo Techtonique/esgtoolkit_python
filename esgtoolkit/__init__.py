@@ -9,6 +9,8 @@ from .simshocks import simshocks
 from .esgcortest import esgcortest
 from .esgdiscountfactor import esgdiscountfactor
 from .esgfwdrates import esgfwdrates
+from .esgmartingaletest import esgmartingaletest
 
 __all__ = ["simdiff", "simshocks", "esgcortest", 
-           "esgdiscountfactor", "esgfwdrates"]
+           "esgdiscountfactor", "esgfwdrates", 
+           "esgmartingaletest"]

@@ -14,7 +14,7 @@ txZC = [0.01422,0.01309,0.01380,0.01549,0.01747,0.01940,0.02104,0.02236,0.02348,
 print(len(txZC))
 
 # Observed maturities
-u = [i for i in range(1,31)]
+u = [i for i in range(1, 31)]
 
 print(len(u))
 
