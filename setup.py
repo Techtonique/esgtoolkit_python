@@ -3,14 +3,14 @@ from installr import check_r_installed, install_r
 from os import path
 from setuptools import setup, find_packages
 
-subprocess.run(['pip', 'install', 'rpy2>=3.4.5'])
-
 # Check if R is installed; if not, install it
 if not check_r_installed():
     print("Installing R...")
     install_r()
 else:
     print("No R installation needed.")
+
+subprocess.run(['pip', 'install', 'rpy2>=3.4.5'])
 
 """The setup script."""
 here = path.abspath(path.dirname(__file__))
