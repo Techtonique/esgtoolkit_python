@@ -7,5 +7,7 @@ __version__ = '1.0.0'
 from .simdiff import simdiff
 from .simshocks import simshocks
 from .esgcortest import esgcortest  
+from .esgdiscountfactor import esgdiscountfactor
 
-__all__ = ["simdiff", "simshocks", "esgcortest"]
+__all__ = ["simdiff", "simshocks", "esgcortest", 
+           "esgdiscountfactor"]

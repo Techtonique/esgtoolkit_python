@@ -27,6 +27,7 @@ def simdiff(
     eps=R_NULL,
     start=R_NULL,
     seed=123,
+    return_R_obj=False,
 ):
     """Simulations of diffusion processes, that are building blocks for various risk factors' models.
 
@@ -74,6 +75,9 @@ def simdiff(
             start=start,
             seed=seed,
         ) 
+
+    if return_R_obj:
+        return res
 
     # convert R object to pandas dataframe
     return pd.DataFrame(np.asarray(res), columns=res.colnames, index=r.time(res))
