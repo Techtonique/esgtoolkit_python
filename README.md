@@ -5,7 +5,7 @@ Diffusion models in Python (see [R version's intro](https://github.com/Techtoniq
 ![PyPI](https://img.shields.io/pypi/v/esgtoolkit) [![PyPI - License](https://img.shields.io/pypi/l/esgtoolkit)](./LICENSE) 
 [![Downloads](https://pepy.tech/badge/esgtoolkit)](https://pepy.tech/project/esgtoolkit) 
 [![HitCount](https://hits.dwyl.com/Techtonique/esgtoolkit_python.svg?style=flat-square)](http://hits.dwyl.com/Techtonique/esgtoolkit_python)
-[![CodeFactor](https://www.codefactor.io/repository/github/techtonique/esgtoolkit_python/badge/main)](https://www.codefactor.io/repository/github/techtonique/esgtoolkit_python/overview/main)
+[![CodeFactor](https://www.codefactor.io/repository/github/techtonique/esgtoolkit_python/badge)](https://www.codefactor.io/repository/github/techtonique/esgtoolkit_python)
 [![Documentation](https://img.shields.io/badge/documentation-is_here-green)](https://techtonique.github.io/ESGtoolkit/)
 
 
